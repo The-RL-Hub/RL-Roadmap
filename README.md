@@ -6,7 +6,7 @@ This repository is the canonical map of what The RL Hub teaches, in what order, 
 
 | Chapter | Topic | Main prerequisite | Website | Executable companion | Learner outcome |
 |---:|---|---|---|---|---|
-| 1 | Introduction to reinforcement learning | Basic ML vocabulary | Available | Not required yet | Identify agent, environment, action, reward, policy, value, and model |
+| 1 | Introduction to reinforcement learning | Basic ML vocabulary | Available | Not required | Identify agent, environment, action, reward, policy, value, and model |
 | 2 | Stochastic multi-armed bandits | Expectation and sample means | Available | MAB notebook | Implement exploration strategies and measure expected regret |
 | 3 | Contextual bandits | Chapter 2, vectors, linear regression | Available | LinUCB and Linear Thompson notebook | Select actions from context and evaluate contextual regret |
 | 4 | Probability foundations | Basic algebra | Available | Probability notebook | Use distributions, conditioning, expectation, variance, LLN, and CLT |

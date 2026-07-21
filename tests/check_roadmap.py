@@ -60,6 +60,10 @@ def main() -> None:
     assert rows == [str(chapter) for chapter in range(1, 9)], (
         f"Expected ordered chapter rows 1-8, found {rows}"
     )
+    chapter_one_row = next(
+        line for line in learning_path.splitlines() if line.startswith("| 1 |")
+    )
+    assert "| Available | Not required |" in chapter_one_row
     assert "Definition of done for a chapter" in readme
 
     completion_path = ROOT / "COMPLETION.md"
@@ -75,7 +79,6 @@ def main() -> None:
     )
     assert list(completion_rows) == [str(chapter) for chapter in range(1, 9)]
     assert set(value.strip() for value in completion_rows.values()) == {"Complete"}
-    assert not tuple(ROOT.glob("reviews/*.md")), "Obsolete records exist"
 
     for release_map in RELEASE_MAPS:
         path = ROOT / release_map

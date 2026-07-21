@@ -49,7 +49,7 @@ The executable path lives in [RLH-Material](https://github.com/The-RL-Hub/RLH-Ma
 |---|---|---|
 | Calculate | Compute moments and one conditional probability | Arithmetic uses the declared support |
 | Simulate | Compare empirical and analytical quantities | Seed, sample count, and deviation are reported |
-| Diagnose | Review an invalid uncertainty claim | Experimental unit and missing assumptions are identified |
+| Diagnose | Audit an invalid uncertainty claim | Experimental unit and missing assumptions are identified |
 
 Passing requires exact finite calculations and a sampling interpretation. Plot shape alone is not evidence that an assumption holds.
 
